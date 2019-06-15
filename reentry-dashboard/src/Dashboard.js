@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';
-import planning from './img/planning.png';
 import driversLicense from './img/driving-license.png';
 import childSupport from './img/custody.png';
 import secondHelpings from './img/second-helpings.png';
