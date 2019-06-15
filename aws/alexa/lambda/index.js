@@ -39,7 +39,7 @@ const FindJobHandler = {
       && handlerInput.requestEnvelope.request.intent.name === 'FindAJobHelpIntent';
   },
   handle(handlerInput) {
-    const speechText = 'There are many jobs available for you. I have sent a resource to your phone';
+    const speechText = 'There are many Indiana jobs available for you. I have sent you a link';
 
     return handlerInput.responseBuilder
       .speak(speechText)
@@ -54,11 +54,11 @@ const EducationalProgramsHandler = {
       && handlerInput.requestEnvelope.request.intent.name === 'FindEducationalProgramsHelpIntent';
   },
   handle(handlerInput) {
-    const speechText = 'You want information about Indiana Education programs? I have sent a resource to your phone';
+    const speechText = 'You want information about Education programs in Indiana? I have sent a resource to your phone';
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard('Driver\'s License Assistance', speechText)
+      .withSimpleCard('Education Program', 'Link to Education Programs')
       .getResponse();
   },
 };
