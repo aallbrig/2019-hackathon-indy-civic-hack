@@ -6,6 +6,12 @@ import secondHelpings from './img/second-helpings.png';
 import callCenter from './img/call-center.png';
 import voiceAssistant from './img/voice-assistant.png';
 import millionJobs from './img/70-million-jobs.png';
+import doctor from './img/doctor.png';
+import mentalHealth from './img/love.png';
+import food from './img/diet.png';
+import WIC from './img/mother-with-baby-in-arms.png';
+import volunteer from './img/logo-national-color.png';
+
 const PLACEHOLDER_IMAGE_SRC = 'https://via.placeholder.com/300x150';
 
 
@@ -41,11 +47,41 @@ const cards = [
     text: '70 Million Jobs is a national organization that helps felons find jobs. Click the link and type your location in the input field to find jobs in your area.'
   },
   {
+    icon: doctor,
+    href: 'https://in211.communityos.org/guided_search/render/ds/%7B%22service%5C%5Cservice_taxonomy%5C%5Cmodule_servicepost%22%3A%7B%22value%22%3A%5B%7B%22taxonomy_id%22%3A410693%7D%5D%2C%22operator%22%3A%5B%22contains_array%22%5D%7D%2C%22agency%5C%5Cagency_system%5C%5Cname%22%3A%7B%22value%22%3A%22VLTEST%22%2C%22operator%22%3A%5B%22notequals%22%5D%7D%7D?localHistory=WgdEKyTRtEurzvkOb3B8Zw',
+    title: 'Healthcare in Indiana',
+    text: 'Finding healthcare can be a hassle, we\'ve found some clinics in your area. Please click here or use our Call Center or Voice Commands for assistance.'
+  },
+  {
+    icon: mentalHealth,
+    href: 'https://www.in.gov/fssa/dmha/2686.htm',
+    title: 'Therapy and Family Counseling',
+    text: 'Reentry can be hard on anyone, even the family. We\'ve gathered a resource to help with family counseling, support groups, or even addiction treament for drugs/alcohol. Family and mental health are building blocks for sobriety and moving on. If you would like any assistance please use the Call Center or user our Voice Commands.'
+  },
+  {
     icon: callCenter,
     href: '/',
     title: 'Call our Call Center',
     text: 'For expert advice and additional resources please call our call center. If you\'d like to apply for position at the call center you may use the 70 Million Jobs link and search for "Call Center"'
-  }
+  },
+  {
+    icon: volunteer,
+    href: 'https://www.voa.org/correctional-re-entry-services',
+    title: 'Volunteers of America',
+    text: 'If you\'d like to help out or volunteer Volunteers of America. They specialize in reentry services and impact million nationally.'
+  },
+  {
+    icon: food,
+    href: 'https://www.in.gov/fssa/dfr/2691.htm',
+    title: 'SNAP food assistance',
+    text: 'Supplemental Nutrition Assistance Program information. Click here or use our Call Center or Voice Commands.'
+  },
+  {
+    icon: WIC,
+    href: 'https://www.in.gov/isdh/19691.htm',
+    title: 'WIC assistance',
+    text: 'Here is a resource for the Indiana Women, Infants, and Children Program. It includes imformation on how to apply, benefits, contact information, and documents. Click here or use our Call Center or Voice Commands.'
+  },
 ];
 
 
