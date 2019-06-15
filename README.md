@@ -8,3 +8,8 @@ For this hackathon, I am going to be focusing on the criminal justice re-entry p
 
 There is the location of the website component of this hackathon
 
+#### Soteria Acolytes
+
+In mythology, Soteria was the goddess of salvation. The team name reflects how our solution serves as salvation for those reentering from a criminal justice by making the task of following the "straight and narrow" path easier and more technologically engaging.
+
+Please read more about Soteria on her [wikipedia page](https://en.wikipedia.org/wiki/Soteria_(mythology))
