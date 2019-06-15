@@ -5,39 +5,46 @@ import childSupport from './img/custody.png';
 import secondHelpings from './img/second-helpings.png';
 import callCenter from './img/call-center.png';
 import voiceAssistant from './img/voice-assistant.png';
+import millionJobs from './img/70-million-jobs.png';
 const PLACEHOLDER_IMAGE_SRC = 'https://via.placeholder.com/300x150';
+
 
 const cards = [
   {
     icon: voiceAssistant,
     href: '/',
     title: 'Get Help using Voice Assistance',
-    text: 'Example of overriding placeholder text'
+    text: 'Use your phone or Amazon Alexa device to help navigate our voice operated shortcuts.'
   },
   {
     icon: driversLicense,
-    href: '/',
-    title: 'Driver License'
+    href: 'https://www.in.gov/bmv/2532.htm',
+    title: 'Driver License',
+    text: 'We\'ve gathered resources to help with navigating the process of applying for a Drier\'s License.'
   },
   {
     icon: childSupport,
     href: 'https://www.in.gov/judiciary/2625.htm',
     title: 'Child Support Calculator',
+    text: 'Example of overriding placeholder text'
   },
   {
     icon: secondHelpings,
     href: 'https://www.secondhelpings.org/',
-    title: 'Second Helpings'
+    title: 'Second Helpings',
+    text: 'Example of overriding placeholder text'
   },
   {
-    icon: PLACEHOLDER_IMAGE_SRC,
-    href: '/',
-    title: 'Employer'
+    icon: millionJobs,
+    href: 'https://www.70millionjobs.com/search',
+    title: 'Help me find jobs in Indiana',
+    text: 'Example of overriding placeholder text'
   },
   {
     icon: callCenter,
     href: '/',
-    title: 'Call our Call Center'
+    title: 'Call our Call Center',
+    text: 'Example of overriding placeholder text'
   }
 ];
 
