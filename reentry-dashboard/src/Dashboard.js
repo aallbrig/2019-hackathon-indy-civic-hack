@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Card, OverlayTrigger, Popover } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import driversLicense from './img/driving-license.png';
 import childSupport from './img/custody.png';
 import secondHelpings from './img/second-helpings.png';
@@ -21,7 +22,7 @@ const PLACEHOLDER_IMAGE_SRC = 'https://via.placeholder.com/300x150';
 const cards = [
   {
     icon: voiceAssistant,
-    href: '/',
+    href: '/voice-assistance',
     internal: true,
     title: 'Get Help using Voice Assistance',
     text: 'Use your phone or Amazon Alexa device to help navigate our voice operated shortcuts.'
@@ -64,16 +65,16 @@ const cards = [
   },
   {
     icon: callCenter,
-    href: '/',
+    href: '/call-center',
     internal: true,
     title: 'Call our Call Center',
     text: 'For expert advice and additional resources please call our call center.'
   },
   {
     icon: callCenterJobs,
-    href: '/',
+    href: '/call-center',
     internal: true,
-    title: 'Call our Call Center',
+    title: 'Join our Call Center',
     text: 'If you\'d like to apply for position at the call center click here.'
   },
   {
@@ -130,20 +131,37 @@ export default function Dashboard() {
                 </Popover>
               }
             >
-              <a href={card.href} target='_new'>
-                <Card className={'h-100'}>
-                  <Card.Title className={'text-center'}>
-                    {card.title ? card.title : 'Placeholder Title'}
-                  </Card.Title>
-                  <Card.Body style={{
-                    display: 'flex',
-                    'align-items': 'center',
-                    'justify-content': 'center'
-                  }}>
-                    <Card.Img variant='top' className='custom-card-img' src={card.icon ? card.icon : PLACEHOLDER_IMAGE_SRC} />
-                  </Card.Body>
-                </Card>
-              </a>
+              {
+                card.internal ?
+                  <Link to={card.href}>
+                    <Card className={'h-100'}>
+                      <Card.Title className={'text-center'}>
+                        {card.title ? card.title : 'Placeholder Title'}
+                      </Card.Title>
+                      <Card.Body style={{
+                        display: 'flex',
+                        'align-items': 'center',
+                        'justify-content': 'center'
+                      }}>
+                        <Card.Img variant='top' className='custom-card-img' src={card.icon ? card.icon : PLACEHOLDER_IMAGE_SRC} />
+                      </Card.Body>
+                    </Card>
+                  </Link>
+                : <a href={card.href} target='_new'>
+                    <Card className={'h-100'}>
+                      <Card.Title className={'text-center'}>
+                        {card.title ? card.title : 'Placeholder Title'}
+                      </Card.Title>
+                      <Card.Body style={{
+                        display: 'flex',
+                        'align-items': 'center',
+                        'justify-content': 'center'
+                      }}>
+                        <Card.Img variant='top' className='custom-card-img' src={card.icon ? card.icon : PLACEHOLDER_IMAGE_SRC} />
+                      </Card.Body>
+                    </Card>
+                  </a>
+              }
             </OverlayTrigger>
           </Col>
         ))}

@@ -26,7 +26,7 @@ export default function App() {
       <Container>
         <Header />
 
-        <Route exact path='/' component={Home} />
+        <Route exact path='/' component={() => (<Redirect to='/dashboard' />)} />
         <Route path='/dashboard' component={Dashboard} />
         <Route path='/call-center' component={CallCenter} />
         <Route path='/voice-assistance' component={VoiceAssistance} />
