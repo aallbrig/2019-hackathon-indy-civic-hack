@@ -22,6 +22,7 @@ const cards = [
   {
     icon: voiceAssistant,
     href: '/',
+    internal: true,
     title: 'Get Help using Voice Assistance',
     text: 'Use your phone or Amazon Alexa device to help navigate our voice operated shortcuts.'
   },
@@ -64,12 +65,14 @@ const cards = [
   {
     icon: callCenter,
     href: '/',
+    internal: true,
     title: 'Call our Call Center',
     text: 'For expert advice and additional resources please call our call center.'
   },
   {
     icon: callCenterJobs,
     href: '/',
+    internal: true,
     title: 'Call our Call Center',
     text: 'If you\'d like to apply for position at the call center click here.'
   },
