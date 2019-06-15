@@ -48,7 +48,7 @@ export default function Dashboard() {
     <div>
       <h2>Dashboard</h2>
 
-      <Row>
+      <Row className="dashboard">
         {cards.map(card => (
           <Col xs={12} sm={4} md={3}>
             <a href={card.href} target='_new'>
