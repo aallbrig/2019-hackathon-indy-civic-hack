@@ -10,7 +10,10 @@ import doctor from './img/doctor.png';
 import mentalHealth from './img/love.png';
 import food from './img/diet.png';
 import WIC from './img/mother-with-baby-in-arms.png';
-import volunteer from './img/logo-national-color.png';
+import volunteerAmerica from './img/logo-national-color.png';
+import volunteer from './img/help.png';
+import twoOneOne from './img/indiana211_logo_transparent.png';
+import callCenterJobs from './img/jobs.png';
 
 const PLACEHOLDER_IMAGE_SRC = 'https://via.placeholder.com/300x150';
 
@@ -62,10 +65,16 @@ const cards = [
     icon: callCenter,
     href: '/',
     title: 'Call our Call Center',
-    text: 'For expert advice and additional resources please call our call center. If you\'d like to apply for position at the call center you may use the 70 Million Jobs link and search for "Call Center"'
+    text: 'For expert advice and additional resources please call our call center.'
   },
   {
-    icon: volunteer,
+    icon: callCenterJobs,
+    href: '/',
+    title: 'Call our Call Center',
+    text: 'If you\'d like to apply for position at the call center click here.'
+  },
+  {
+    icon: volunteerAmerica,
     href: 'https://www.voa.org/correctional-re-entry-services',
     title: 'Volunteers of America',
     text: 'If you\'d like to help out or volunteer Volunteers of America. They specialize in reentry services and impact million nationally.'
@@ -81,6 +90,18 @@ const cards = [
     href: 'https://www.in.gov/isdh/19691.htm',
     title: 'WIC assistance',
     text: 'Here is a resource for the Indiana Women, Infants, and Children Program. It includes imformation on how to apply, benefits, contact information, and documents. Click here or use our Call Center or Voice Commands.'
+  },
+  {
+    icon: volunteer,
+    href: 'https://www.in.gov/isdh/19691.htm',
+    title: 'Indiana Volunteer Opportunities',
+    text: 'Indiana has some volunteer opportunities and classes if you\'d like to learn or help fellow Hoosiers. Click here or use our Call Center or Voice Commands.'
+  },
+  {
+    icon: twoOneOne,
+    href: 'https://in211.communityos.org/',
+    title: '2-1-1 resource',
+    text: '2-1-1 is a free service that connects Hoosiers with help. Click here or use our Call Center or Voice Commands.'
   },
 ];
 
