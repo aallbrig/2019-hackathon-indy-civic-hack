@@ -27,6 +27,33 @@
           ]
         },
         {
+          "name": "DriversLicenseHelpIntent",
+          "slots": [],
+          "samples": [
+            "help me with my driver's license",
+            "driver's license",
+            "license"
+          ]
+        },
+        {
+          "name": "FindAJobHelpIntent",
+          "slots": [],
+          "samples": [
+            "help me find a job",
+            "job lists",
+            "jobs"
+          ]
+        },
+        {
+          "name": "FindAJobHelpIntent",
+          "slots": [],
+          "samples": [
+            "help me find a job",
+            "job lists",
+            "jobs"
+          ]
+        },
+        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
         }

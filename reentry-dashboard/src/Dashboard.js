@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card, OverlayTrigger, Popover } from 'react-bootstrap';
 import driversLicense from './img/driving-license.png';
 import childSupport from './img/custody.png';
 import secondHelpings from './img/second-helpings.png';
@@ -51,21 +51,25 @@ export default function Dashboard() {
       <Row>
         {cards.map(card => (
           <Col xs={12} sm={4} md={3}>
-            <a href={card.href} target='_new'>
-              <Card className={'h-100'}>
-                {card.icon ? card.icon : <Card.Img variant='top' className='custom-card-img' src={PLACEHOLDER_IMAGE_SRC} />}
-                <Card.Body>
-                  <center>
-                    <Card.Title>
-                      {card.title ? card.title : 'Placeholder Title'}
-                    </Card.Title>
-                  </center>
-                  <Card.Text>
-                    {card.text ? card.text : 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </a>
+            <OverlayTrigger
+              trigger='hover'
+              key={'top'}
+              placement={'top'}
+              overlay={
+                <Popover
+                  id={`popover-positioned-${card.title}`}
+                  title={card.title ? card.title : 'Placeholder Title'}
+                >
+                  {card.text ? card.text : 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'}
+                </Popover>
+              }
+            >
+              <a href={card.href} target='_new'>
+                <Card className={'h-100'}>
+                  {card.icon ? card.icon : <Card.Img variant='top' className='custom-card-img' src={PLACEHOLDER_IMAGE_SRC} />}
+                </Card>
+              </a>
+            </OverlayTrigger>
           </Col>
         ))}
       </Row>
