@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import { Container } from 'react-bootstrap';
 
 import Dashboard from './Dashboard';
@@ -31,6 +31,7 @@ export default function App() {
         <Route path='/call-center' component={CallCenter} />
         <Route path='/voice-assistance' component={VoiceAssistance} />
         <Route path='/about' component={About} />
+        <Route component={() => (<Redirect to='/dashboard' />)} />
       </Container>
     </Router>
   );
