@@ -20,31 +20,31 @@ const cards = [
     icon: driversLicense,
     href: 'https://www.in.gov/bmv/2532.htm',
     title: 'Driver License',
-    text: 'We\'ve gathered resources to help with navigating the process of applying for a Drier\'s License.'
+    text: 'Drier\'s License BMV link for information and starting the process. If you\'d like assitance with this process please click into the call center dashboard icon.'
   },
   {
     icon: childSupport,
     href: 'https://www.in.gov/judiciary/2625.htm',
     title: 'Child Support Calculator',
-    text: 'Example of overriding placeholder text'
+    text: 'This calculator helps calculate the expected amount of support you\'d expect to pay'
   },
   {
     icon: secondHelpings,
     href: 'https://www.secondhelpings.org/',
     title: 'Second Helpings',
-    text: 'Example of overriding placeholder text'
+    text: 'Second Helpings is an organization that helps transform lives through food. They help train underemployed and unemployed Hoosiers find meaningful jobs in the culinary industry'
   },
   {
     icon: millionJobs,
     href: 'https://www.70millionjobs.com/search',
     title: 'Help me find jobs in Indiana',
-    text: 'Example of overriding placeholder text'
+    text: '70 Million Jobs is a national organization that helps felons find jobs. Click the link and type your location in the input field to find jobs in your area.'
   },
   {
     icon: callCenter,
     href: '/',
     title: 'Call our Call Center',
-    text: 'Example of overriding placeholder text'
+    text: 'For expert advice and additional resources please call our call center. If you\'d like to apply for position at the call center you may use the 70 Million Jobs link and search for "Call Center"'
   }
 ];
 
