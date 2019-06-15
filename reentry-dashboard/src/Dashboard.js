@@ -15,14 +15,14 @@ export default function Dashboard() {
       <Row>
         <Col>
           <Card>
-            <a href="/"><Card.Img variant="top" className="custom-card-img" src={driversLicense} /></a>
+            <a href="/" target="_new"><Card.Img variant="top" className="custom-card-img" src={driversLicense} /></a>
             <Card.Body>
               <center><Card.Title>Licenses and Documentation help</Card.Title></center>
               <Card.Text>
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.
               </Card.Text>
-              <a href="/">
+              <a href="/" target="_new">
                 <Button variant="primary" size="md" block>
                   Go somewhere
                 </Button>
@@ -32,14 +32,16 @@ export default function Dashboard() {
         </Col>
         <Col>
           <Card>
-            <a href="/"><Card.Img variant="top" className="custom-card-img" src={childSupport} /></a>
+            <a href="/" target="_new">
+              <Card.Img variant="top" className="custom-card-img" src={childSupport} />
+            </a>
             <Card.Body>
               <center><Card.Title>Child Support</Card.Title></center>
               <Card.Text>
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.
               </Card.Text>
-              <a href="/">
+              <a href="/" target="_new">
                 <Button variant="primary" size="md" block>
                   Go somewhere
                 </Button>
@@ -49,14 +51,17 @@ export default function Dashboard() {
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" className="custom-card-img" src={secondHelpings} />
+            <a href="https://www.secondhelpings.org/" target="_new">
+              <Card.Img variant="top" className="custom-card-img" src={secondHelpings} 
+              alt="Second Helpings, transforming lives through the power of food" />
+            </a>
             <Card.Body>
               <center><Card.Title>Second Helpings</Card.Title></center>
               <Card.Text>
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.
               </Card.Text>
-              <a href="/">
+              <a href="https://www.secondhelpings.org/" target="_new">
                 <Button variant="primary" size="md" block>
                   Go somewhere
                 </Button>
@@ -68,7 +73,9 @@ export default function Dashboard() {
       <Row>
         <Col>
           <Card>
-            <Card.Img variant="top" className="custom-card-img" src={imageSrc} />
+            <a href="/" target="_new">
+              <Card.Img variant="top" className="custom-card-img" src={imageSrc} />
+            </a>
             <Card.Body>
               <center><Card.Title>Employer</Card.Title></center>
               <Card.Text>
@@ -85,14 +92,16 @@ export default function Dashboard() {
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" className="custom-card-img" src={callCenter} />
+            <a href="/" target="_new">
+              <Card.Img variant="top" className="custom-card-img" src={callCenter} />
+            </a>
             <Card.Body>
               <center><Card.Title>Get Help</Card.Title></center>
               <Card.Text>
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.
               </Card.Text>
-              <a href="/">
+              <a href="/" target="_new">
                 <Button variant="primary" size="md" block>
                   Go somewhere
                 </Button>
@@ -102,7 +111,9 @@ export default function Dashboard() {
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" className="custom-card-img" src={voiceAssistant} />
+            <a href="/" target="_new">
+              <Card.Img variant="top" className="custom-card-img" src={voiceAssistant} />
+            </a>
             <Card.Body>
               <center><Card.Title>Voice Assistance</Card.Title></center>
               <Card.Text>
