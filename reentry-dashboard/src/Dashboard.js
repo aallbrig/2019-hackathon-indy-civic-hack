@@ -9,34 +9,33 @@ const PLACEHOLDER_IMAGE_SRC = 'https://via.placeholder.com/300x150';
 
 const cards = [
   {
-    icon: <Card.Img variant='top' className='custom-card-img' src={voiceAssistant} />,
+    icon: voiceAssistant,
     href: '/',
     title: 'Get Help using Voice Assistance',
     text: 'Example of overriding placeholder text'
   },
   {
-    icon: <Card.Img variant='top' className='custom-card-img' src={driversLicense} />,
+    icon: driversLicense,
     href: '/',
     title: 'Driver License'
   },
   {
-    icon: <Card.Img variant='top' className='custom-card-img' src={childSupport} />,
+    icon: childSupport,
     href: 'https://www.in.gov/judiciary/2625.htm',
     title: 'Child Support Calculator',
   },
   {
-    icon: <Card.Img variant='top' className='custom-card-img' src={secondHelpings}
-                alt='Second Helpings, transforming lives through the power of food' />,
+    icon: secondHelpings,
     href: 'https://www.secondhelpings.org/',
     title: 'Second Helpings'
   },
   {
-    icon: <Card.Img variant='top' className='custom-card-img' src={PLACEHOLDER_IMAGE_SRC} />,
+    icon: PLACEHOLDER_IMAGE_SRC,
     href: '/',
     title: 'Employer'
   },
   {
-    icon: <Card.Img variant='top' className='custom-card-img' src={callCenter} />,
+    icon: callCenter,
     href: '/',
     title: 'Call our Call Center'
   }
@@ -66,11 +65,15 @@ export default function Dashboard() {
             >
               <a href={card.href} target='_new'>
                 <Card className={'h-100'}>
-                  <Card.Body>
-                    <Card.Title>
-                      {card.title ? card.title : 'Placeholder Title'}
-                    </Card.Title>
-                    {card.icon ? card.icon : <Card.Img variant='top' className='custom-card-img' src={PLACEHOLDER_IMAGE_SRC} />}
+                  <Card.Title className={'text-center'}>
+                    {card.title ? card.title : 'Placeholder Title'}
+                  </Card.Title>
+                  <Card.Body style={{
+                    display: 'flex',
+                    'align-items': 'center',
+                    'justify-content': 'center'
+                  }}>
+                    <Card.Img variant='top' className='custom-card-img' src={card.icon ? card.icon : PLACEHOLDER_IMAGE_SRC} />
                   </Card.Body>
                 </Card>
               </a>
