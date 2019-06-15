@@ -2,11 +2,14 @@
 
 For this hackathon, I am going to be focusing on the criminal justice re-entry program challenge. The challenge is to make anyone going through the reentry program have an easier time, using technology.
 
-## Link to Website
+## Solution
 
-[Here is the link to the website (https://aallbrig.github.io/2019-hackathon-indy-civic-hack)](https://aallbrig.github.io/2019-hackathon-indy-civic-hack)
+The solution I've come up with is to centralize critical resources into a mobile friendly dashboard that particicants in the reentry program can visit to help them on their journey.
 
-There is the location of the website component of this hackathon
+Here is a [link to the solution dashboard](https://aallbrig.github.io/2019-hackathon-indy-civic-hack)
+
+
+There is a voice assistant component to this solution as well. In order to stay current with modern communications, those who are a part of the reentry program who also have access to voice assistances should be able to interact with them to help them on their journey as well.
 
 ### Soteria Acolytes
 
