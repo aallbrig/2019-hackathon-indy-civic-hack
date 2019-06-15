@@ -66,7 +66,12 @@ export default function Dashboard() {
             >
               <a href={card.href} target='_new'>
                 <Card className={'h-100'}>
-                  {card.icon ? card.icon : <Card.Img variant='top' className='custom-card-img' src={PLACEHOLDER_IMAGE_SRC} />}
+                  <Card.Body>
+                    <Card.Title>
+                      {card.title ? card.title : 'Placeholder Title'}
+                    </Card.Title>
+                    {card.icon ? card.icon : <Card.Img variant='top' className='custom-card-img' src={PLACEHOLDER_IMAGE_SRC} />}
+                  </Card.Body>
                 </Card>
               </a>
             </OverlayTrigger>
