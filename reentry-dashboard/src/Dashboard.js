@@ -31,7 +31,7 @@ export default function Dashboard() {
         </Col>
         <Col>
           <Card>
-            <a href="/" target="_new">
+            <a href="https://www.in.gov/judiciary/2625.htm?fbclid=IwAR1ad-QkZ_1dzN3qi4dZZ6Kh1yuNL6K11HdwlZOnxo036jSZGgbKXqUnwok" target="_new">
               <Card.Img variant="top" className="custom-card-img" src={childSupport} />
             </a>
             <Card.Body>
@@ -40,7 +40,7 @@ export default function Dashboard() {
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.
               </Card.Text>
-              <a href="/" target="_new">
+              <a href="https://www.in.gov/judiciary/2625.htm?fbclid=IwAR1ad-QkZ_1dzN3qi4dZZ6Kh1yuNL6K11HdwlZOnxo036jSZGgbKXqUnwok" target="_new">
                 <Button variant="primary" size="md" block>
                   Go somewhere
                 </Button>
