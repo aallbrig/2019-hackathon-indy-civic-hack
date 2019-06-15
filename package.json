@@ -1,0 +1,22 @@
+{
+  "name": "2019-hackathon-indy-civic-hack",
+  "version": "1.0.0",
+  "description": "Centralize commands via npm scripts",
+  "main": "README.md",
+  "scripts": {
+    "predeploy-aws": "cd aws/alexa/lambda && zip -r ../../../function.zip . * && cd ../../..",
+    "deploy-aws": "aws lambda update-function-code --function-name soteria-alexa-skill --zip-file fileb://function.zip",
+    "deploy-dashboard": "cd reentry-dashboard && npm run deploy && cd ..",
+    "dev-dashboard": "cd reentry-dashboard && npm start && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aallbrig/2019-hackathon-indy-civic-hack.git"
+  },
+  "author": "Andrew Allbright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aallbrig/2019-hackathon-indy-civic-hack/issues"
+  },
+  "homepage": "https://github.com/aallbrig/2019-hackathon-indy-civic-hack#readme"
+}

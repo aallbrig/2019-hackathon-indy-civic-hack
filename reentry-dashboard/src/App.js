@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Container } from 'react-bootstrap';
 
 import Dashboard from './Dashboard';
 import Home from './Home';
