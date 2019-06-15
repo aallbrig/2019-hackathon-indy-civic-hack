@@ -59,8 +59,8 @@ export default function Dashboard() {
           <Col xs={12} sm={4} md={3}>
             <OverlayTrigger
               trigger='hover'
-              key={'top'}
-              placement={'top'}
+              key={'right'}
+              placement={'right'}
               overlay={
                 <Popover
                   id={`popover-positioned-${card.title}`}

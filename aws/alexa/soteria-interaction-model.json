@@ -20,13 +20,6 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
-          "slots": [],
-          "samples": [
-            "hello"
-          ]
-        },
-        {
           "name": "DriversLicenseHelpIntent",
           "slots": [],
           "samples": [
@@ -45,12 +38,12 @@
           ]
         },
         {
-          "name": "FindAJobHelpIntent",
+          "name": "FindEducationalProgramsHelpIntent",
           "slots": [],
           "samples": [
-            "help me find a job",
-            "job lists",
-            "jobs"
+            "help me find educational resources",
+            "education",
+            "education program"
           ]
         },
         {
