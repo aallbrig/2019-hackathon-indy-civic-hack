@@ -8,7 +8,7 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'Hello my name is sota reya, goddess of salvation. How may I help today?';
+    const speechText = 'I am sota reya, Greek goddess of salvation. How may I help you today?';
 
     return handlerInput.responseBuilder
       .speak(speechText)
@@ -18,17 +18,47 @@ const LaunchRequestHandler = {
   },
 };
 
-const HelloWorldIntentHandler = {
+const DriversLicenseHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'HelloWorldIntent';
+      && handlerInput.requestEnvelope.request.intent.name === 'DriversLicenseHelpIntent';
   },
   handle(handlerInput) {
-    const speechText = 'Hello World!';
+    const speechText = 'I can help with your Indiana Driver\'s License. I have sent a resource to your phone';
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard('Hello World', speechText)
+      .withSimpleCard('Driver\'s License Assistance', speechText)
+      .getResponse();
+  },
+};
+
+const FindJobHandler = {
+  canHandle(handlerInput) {
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'FindAJobHelpIntent';
+  },
+  handle(handlerInput) {
+    const speechText = 'There are many jobs available for you. I have sent a resource to your phone';
+
+    return handlerInput.responseBuilder
+      .speak(speechText)
+      .withSimpleCard('Driver\'s License Assistance', speechText)
+      .getResponse();
+  },
+};
+
+const EducationalProgramsHandler = {
+  canHandle(handlerInput) {
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'FindEducationalProgramsHelpIntent';
+  },
+  handle(handlerInput) {
+    const speechText = 'You want information about Indiana Education programs? I have sent a resource to your phone';
+
+    return handlerInput.responseBuilder
+      .speak(speechText)
+      .withSimpleCard('Driver\'s License Assistance', speechText)
       .getResponse();
   },
 };
@@ -39,7 +69,7 @@ const HelpIntentHandler = {
       && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent';
   },
   handle(handlerInput) {
-    const speechText = 'You can say hello to me!';
+    const speechText = 'I am sota reya, Greek goddess of salvation. How may I help you today?';
 
     return handlerInput.responseBuilder
       .speak(speechText)
@@ -95,7 +125,9 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
-    HelloWorldIntentHandler,
+    DriversLicenseHandler,
+    EducationalProgramsHandler,
+    FindJobHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler
