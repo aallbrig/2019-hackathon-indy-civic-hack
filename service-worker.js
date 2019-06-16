@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/2019-hackathon-indy-civic-hack/precache-manifest.4134ad965f8763e1093bda01a5a0506c.js"
+  "/2019-hackathon-indy-civic-hack/precache-manifest.58d7f5d01e18d99ec5e7c4ad3cfa3061.js"
 );
 
 self.addEventListener('message', (event) => {
